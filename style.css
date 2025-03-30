@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+.navbar {
+    background-color: #514caf;
+  }
+  .navbar-logo {
+    width: 5%;
+  }
+  .navbar-logo img {
+    width: 100%;
+    min-width: 7%;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+  }
+  .cart img {
+    width: 5%;
+  }
+  
+  /* Hamburger Icon Styles */
+  .hamburger-icon, .cancel-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  .cancel-icon span {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .search-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    outline: none;
+  }
+  
+  .search-button {
+    /* position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0 20px; */
+    position: absolute;
+    right: 110px;
+    margin-top: 7px;
+    padding: 10px;
+    width: 15%;
+    background-color: #514caf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+
+  .find-section {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 3rem auto;
+  }
+  .category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .category-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+  
+  .category-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  .all-services {
+    width: 90%;
+    margin: auto;
+  }
+
+  .box-style {
+    width: 30%;
+    width: 30%;
+    background: #e0e0e0;
+  }
+
+  .box-style img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .info {
+    width: 90%;
+    margin: auto;
+  }
+
+  .info-text {
+    text-align: center;
+    padding: 10px;
+    line-height: 20px;
+  }
+  
+  .price-sec {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  .price-sec button {
+    width: 50%;
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    background-color: #514caf;
+    cursor: pointer;
+  }
+
+  .box-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+  }
+
+ .details-btn a {
+  color: #000;
+  text-decoration: none;
+ }
+ .details-btn:hover {
+  background-color: white;
+  color: #514caf;
+  box-shadow: 5px 5px 10px #9e9c9c;
+ }
+
+  .ready-section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 35px;
+    line-height: 30px;
+  }
+
+footer {
+  background-color: #514caf;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 1rem;
+  padding: 15px 0;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: white;
+}
+
+
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 1rem;
+    }
+  
+    .navbar-links.active {
+      display: flex;
+    }
+
+    .navbar-logo {
+        width: 25%;
+    }
+  
+    .hamburger-icon, .cancel-icon {
+      display: flex;
+    }
+  
+    .hidden {
+      display: none;
+    }
+  }
