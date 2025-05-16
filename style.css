@@ -23,15 +23,20 @@
   
   .navbar-links {
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    margin-left: 4rem;
   }
   
   .navbar-links a {
     color: white;
     text-decoration: none;
   }
-  .cart img {
-    width: 5%;
+
+  .carti {
+    width: 3%;
+  }
+  .carti img {
+    width: 100%;
   }
   
   /* Hamburger Icon Styles */
@@ -229,7 +234,65 @@ footer {
   font-weight: bold;
 }
 
+.cart {
+  width: 50%;
+  margin: auto;
+}
 
+.cart h2 {
+  text-align: center;
+}
+
+.cart-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #e1e1db82;
+  margin-bottom: 0.5rem;
+  border-radius: 15px;
+
+
+}
+
+.cart-items {
+  display: flex;
+}
+
+.cart-pics {
+  width: 16%;
+}
+
+.cart-pic {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.pic-info {
+  padding-left: 25px;
+  line-height: 25px;
+}
+
+.cart-price {
+  line-height: 25px;
+}
+
+.cart-price p {
+  color: red;
+  cursor: pointer;
+}
+.cart-price p:hover {
+color: black;
+}
+
+
+.check-out {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.form {
+  line-height: 30px;
+}
 
   @media (max-width: 768px) {
     .navbar-links {
@@ -257,5 +320,45 @@ footer {
   
     .hidden {
       display: none;
+    }
+
+    .all-services {
+      width: 85%;
+    }
+    
+    .box-flex {
+      flex-direction: column;
+      margin-top: 0;
+    }
+
+    .box-style {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .cart {
+      width: 60%;
+    }
+    .cart-items {
+      flex-direction: column;
+    }
+    .cart-pics {
+      width: 45%;
+    }
+    .pic-info {
+      padding-left: 0;
+    }
+    .footer-list {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .cart {
+      width: 90%;
+    }
+    .cart-pics {
+      width: 55%;
+      text-align: center;
     }
   }
